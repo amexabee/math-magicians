@@ -21,7 +21,7 @@ class Calculator extends Component {
   render() {
     const { total, next } = this.state;
     return (
-      <fragment>
+      <>
         <div className="container m-2">
           <div className="row">
             <button type="button" className="col-4 btn btn-secondary text-end">
@@ -186,7 +186,7 @@ class Calculator extends Component {
             </button>
           </div>
         </div>
-      </fragment>
+      </>
     );
   }
 }
