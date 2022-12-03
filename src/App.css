@@ -1,3 +1,7 @@
 body {
   text-align: center;
 }
+
+.operation:focus {
+  background-color: orange !important;
+}
