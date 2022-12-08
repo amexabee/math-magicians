@@ -14,17 +14,18 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      <div className="container m-2">
+    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <h3>Let&apos;s do some math!</h3>
+      <div className="container m-2 calculator">
         <div className="row">
-          <button type="button" className="col-4 btn btn-secondary text-end">
+          <button type="button" className="col-12 btn btn-secondary text-end">
             {calculatorObject.next || calculatorObject.total || 0}
           </button>
         </div>
         <div className="row">
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             AC
@@ -32,7 +33,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             +/-
@@ -40,7 +41,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             %
@@ -48,7 +49,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-warning border border-secondary operation"
+            className="col-3 btn btn-warning border border-secondary operation"
             onClick={clicked}
           >
             ÷
@@ -57,7 +58,7 @@ const Calculator = () => {
         <div className="row">
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             7
@@ -65,7 +66,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             8
@@ -73,7 +74,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             9
@@ -81,7 +82,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-warning border border-secondary operation"
+            className="col-3 btn btn-warning border border-secondary operation"
             onClick={clicked}
           >
             x
@@ -90,7 +91,7 @@ const Calculator = () => {
         <div className="row">
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             4
@@ -98,7 +99,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             5
@@ -106,7 +107,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             6
@@ -114,7 +115,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-warning border border-secondary operation"
+            className="col-3 btn btn-warning border border-secondary operation"
             onClick={clicked}
           >
             -
@@ -123,7 +124,7 @@ const Calculator = () => {
         <div className="row">
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             1
@@ -131,7 +132,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             2
@@ -139,7 +140,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             3
@@ -147,7 +148,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-warning border border-secondary operation"
+            className="col-3 btn btn-warning border border-secondary operation"
             onClick={clicked}
           >
             +
@@ -156,7 +157,7 @@ const Calculator = () => {
         <div className="row">
           <button
             type="button"
-            className="col-2 btn btn-light border border-secondary"
+            className="col-6 btn btn-light border border-secondary"
             onClick={clicked}
           >
             0
@@ -164,7 +165,7 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-light border border-secondary"
+            className="col-3 btn btn-light border border-secondary"
             onClick={clicked}
           >
             .
@@ -172,14 +173,14 @@ const Calculator = () => {
 
           <button
             type="button"
-            className="col-1 btn btn-warning border border-secondary operation"
+            className="col-3 btn btn-warning border border-secondary operation"
             onClick={clicked}
           >
             =
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
