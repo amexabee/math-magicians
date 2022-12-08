@@ -1,3 +1,7 @@
 .operation:focus {
   background-color: orange !important;
 }
+
+.calculator {
+  width: 40% !important;
+}
